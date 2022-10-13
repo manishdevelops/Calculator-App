@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="/sass/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Calculator app</title>
@@ -15,12 +16,29 @@
   </style>
 </head>
 <body>
-
+<main class="calc">
+  <div class="calc__container">
+    <div class="calc__container-header">
+      <h1 class="calc__container-logo">calc</h1>
+      <div class="calc__header-themeContainer">
+        <p class="calc__theme">theme</p>
+        <div class="calc__header-btns">
+            <input type="radio" id="btn1" name="button-1" value="30">
+            <label for="button-1"></label><br>
+            <input type="radio" id="btn2" name="button-2" value="60">
+            <label for="button-1"></label><br>  
+            <input type="radio" id="btn3" name="button-3" value="100">
+            <label for="button-3"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
