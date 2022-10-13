@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: hsl(224deg, 28%, 35%);
   font-family: "League Spartan", sans-serif;
 }
 body .calc .calc__container {
