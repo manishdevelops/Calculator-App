@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "League Spartan", sans-serif;
+}
 body .calc .calc__container {
   padding: 1.5rem;
 }
@@ -19,10 +23,10 @@ body .calc .calc__container .calc__container-header .calc__header-themeContainer
   justify-content: space-between;
   align-items: center;
   width: 150px;
-  background-color: red;
 }
 body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__theme {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__header-btns {
   all: unset;
@@ -31,9 +35,25 @@ body .calc .calc__container .calc__container-header .calc__header-themeContainer
   align-items: baseline;
   flex-direction: row;
   background-color: blue;
-  border-radius: 10px;
+  border-radius: 30px;
+  position: relative;
+  height: 15px;
+  width: 55px;
+  padding: 0.3rem;
+}
+body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__header-btns input[type=radio] {
+  opacity: 0;
 }
 body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__header-btns .labels {
   position: relative;
-  transform: translate(-10px, -15px);
+  transform: translate(-10px, -25px);
+  font-size: 0.9rem;
+}
+body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__header-btns .toggleBtn {
+  all: unset;
+  background-color: black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
 }/*# sourceMappingURL=main.css.map */

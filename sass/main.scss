@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
+
+
+
+
 body{
+  font-family: 'League Spartan', sans-serif;
   .calc{
 
    .calc__container{
@@ -22,10 +30,11 @@ body{
         justify-content: space-between;
         align-items: center;
         width: 150px;
-        background-color: red;
+        // background-color: red;
 
         .calc__theme{
-          font-size:1rem;
+          font-size:.9rem;
+          text-transform: uppercase;
         }
         .calc__header-btns{
           all: unset;
@@ -34,11 +43,29 @@ body{
           align-items: baseline;
           flex-direction: row;
           background-color: blue;
-          border-radius: 10px;
+          border-radius:30px;
+          position: relative;
+          height: 15px;
+          width: 55px;
+          padding: .3rem;
+
+          input[type=radio]{
+            opacity: 0;
+          }
 
           .labels{
             position: relative;
-            transform: translate(-10px,-15px);
+            transform: translate(-10px,-25px);
+            font-size: .9rem;
+          }
+
+          .toggleBtn{
+            all:unset;
+            background-color: black;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            position: absolute;
           }
         }
       }
