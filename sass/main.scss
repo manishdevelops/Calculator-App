@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  .calc{
+
+   .calc__container{
+
+    .calc__container-header{
+      display: flex;
+      .calc__container-logo{
+        font-size: 4rem;
+      }
+      .calc__header-themeContainer{
+        display: flex;
+
+        .calc__theme{
+          font-size:1rem;
+        }
+        .calc__header-btns{
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    }
+   }
+  }
+}

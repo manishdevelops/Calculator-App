@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .calc .calc__container .calc__container-header {
+  display: flex;
+}
+body .calc .calc__container .calc__container-header .calc__container-logo {
+  font-size: 4rem;
+}
+body .calc .calc__container .calc__container-header .calc__header-themeContainer {
+  display: flex;
+}
+body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__theme {
+  font-size: 1rem;
+}
+body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__header-btns {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=main.css.map */
