@@ -8,21 +8,38 @@ body{
   .calc{
 
    .calc__container{
+    padding: 1.5rem;
 
     .calc__container-header{
       display: flex;
+      justify-content: space-between;
+
       .calc__container-logo{
-        font-size: 4rem;
+        font-size: 2rem;
       }
       .calc__header-themeContainer{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 150px;
+        background-color: red;
 
         .calc__theme{
           font-size:1rem;
         }
         .calc__header-btns{
+          all: unset;
           display: flex;
+          align-items: center;
+          align-items: baseline;
           flex-direction: row;
+          background-color: blue;
+          border-radius: 10px;
+
+          .labels{
+            position: relative;
+            transform: translate(-10px,-15px);
+          }
         }
       }
     }
