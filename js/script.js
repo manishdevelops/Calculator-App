@@ -2,25 +2,23 @@
 
 const switchOpts=document.querySelectorAll('.btnOptions');
 const totalSwitches=switchOpts.length;
-let currSwitch;
+let currSwitch=1;
 
 const slideBtn=function(val){
+  console.log(currSwitch);
   let slideValue=0;
-  if(totalSwitches > currSwitch)
-    slideValue=val-totalSwitches;
-  else
-    slideValue=totalSwitches - val;
+  slideValue=val - currSwitch;
   console.log(slideValue);
 }
 
 switchOpts.forEach(function(ele){
   ele.addEventListener('click',function(e){
-    console.log(1);
+    // console.log(1);
     if (e.target.classList.contains('btnOptions')){
       const TargetBtn=e.target.dataset.index;
-      currSwitch=TargetBtn;
-      console.log(TargetBtn);
+      console.log("target",TargetBtn);
       slideBtn(TargetBtn);
+      currSwitch=TargetBtn;
     }
     return;
   })
