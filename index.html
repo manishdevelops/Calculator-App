@@ -14,6 +14,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script defer src="/js/script.js"></script>
 </head>
 <body>
 <main class="calc">
@@ -23,11 +24,11 @@
       <div class="calc__header-themeContainer">
         <p class="calc__theme">theme</p>
         <div class="calc__header-btns">
-            <input type="radio" id="btn1" name="button-1" value="30">
-            <label class="labels" for="button-1">1</label><br>
-            <input type="radio" id="btn2" name="button-2" value="60">
-            <label class="labels" for="button-1">2</label><br>  
-            <input type="radio" id="btn3" name="button-3" value="100">
+            <input type="radio" data-index="1" class="btnOptions" id="btn1" name="button-1" value="30">
+            <label class="labels"  for="button-1">1</label><br>
+            <input type="radio" data-index="2" class="btnOptions" id="btn2" name="button-2" value="60">
+            <label class="labels"  for="button-1">2</label><br>  
+            <input type="radio" data-index="3" class="btnOptions" id="btn3" name="button-3" value="100">
             <label class="labels" for="button-3">3</label>
             <button class="toggleBtn" type="button"></button>
         </div>
