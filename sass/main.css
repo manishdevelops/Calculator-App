@@ -80,11 +80,12 @@ body .calc .calc__container .calc__numberContainer {
   padding: 1.5rem;
   background-color: cyan;
 }
-body .calc .calc__container .calc__numberContainer .row-1 {
+body .calc .calc__container .calc__numberContainer .rows {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
-body .calc .calc__container .calc__numberContainer .row-1 .keyStyle {
+body .calc .calc__container .calc__numberContainer .rows .keyStyle {
   all: unset;
   background-color: yellow;
   width: 60px;
@@ -94,6 +95,6 @@ body .calc .calc__container .calc__numberContainer .row-1 .keyStyle {
   font-size: 2.1rem;
   box-shadow: 0 4px 0 0.2px #b4a597;
 }
-body .calc .calc__container .calc__numberContainer .row-1 .delBtn {
+body .calc .calc__container .calc__numberContainer .rows .delBtn {
   font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

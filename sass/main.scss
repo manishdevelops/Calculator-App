@@ -99,9 +99,11 @@ body{
         padding: 1.5rem;
 
         background-color: cyan;
-        .row-1{
+        
+        .rows{
           display: flex;
           justify-content: space-between;
+          margin-bottom: 1rem;
           .keyStyle{
             all: unset;
             background-color: yellow;
@@ -115,6 +117,7 @@ body{
           .delBtn{
             font-size: 1.5rem ;
           }
+          
         }
       }
    }
