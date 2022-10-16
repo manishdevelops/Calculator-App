@@ -71,4 +71,29 @@ body .calc .calc__container .calc__container-header .calc__header-themeContainer
 }
 body .calc .calc__container .calc__display {
   width: 100%;
+  height: 90px;
+  margin: 2rem 0;
+  background-color: wheat;
+  border-radius: 15px;
+}
+body .calc .calc__container .calc__numberContainer {
+  padding: 1.5rem;
+  background-color: cyan;
+}
+body .calc .calc__container .calc__numberContainer .row-1 {
+  display: flex;
+  justify-content: space-between;
+}
+body .calc .calc__container .calc__numberContainer .row-1 .keyStyle {
+  all: unset;
+  background-color: yellow;
+  width: 60px;
+  height: 70px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 2.1rem;
+  box-shadow: 0 4px 0 0.2px #b4a597;
+}
+body .calc .calc__container .calc__numberContainer .row-1 .delBtn {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

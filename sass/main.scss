@@ -81,7 +81,9 @@ body{
       }
       .calc__display{
         width: 100%;
-        // height: 90px;
+        height: 90px;
+        margin: 2rem 0;
+        background-color: wheat;
         // display: flex;
         // justify-content: end;
         // align-items: center;
@@ -89,8 +91,31 @@ body{
         // #calc__input{
         // width: 100%;
         // height: 90px;
-        // border-radius: 15px;
+        border-radius: 15px;
         // }
+      }
+      .calc__numberContainer{
+        // display: flex;
+        padding: 1.5rem;
+
+        background-color: cyan;
+        .row-1{
+          display: flex;
+          justify-content: space-between;
+          .keyStyle{
+            all: unset;
+            background-color: yellow;
+            width:60px;
+            height: 70px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 2.1rem;
+            box-shadow: 0 4px 0 0.2px #b4a597;
+          }
+          .delBtn{
+            font-size: 1.5rem ;
+          }
+        }
       }
    }
   }
