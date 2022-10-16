@@ -9,6 +9,9 @@ body {
   background-color: hsl(224deg, 28%, 35%);
   font-family: "League Spartan", sans-serif;
 }
+body .calc {
+  padding: 1.5rem 0;
+}
 body .calc .calc__container {
   padding: 1.5rem;
 }
@@ -23,10 +26,10 @@ body .calc .calc__container .calc__container-header .calc__header-themeContainer
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 150px;
+  width: 125px;
 }
 body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__theme {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
 }
 body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__header-btns {
@@ -65,4 +68,14 @@ body .calc .calc__container .calc__container-header .calc__header-themeContainer
   position: absolute;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+body .calc .calc__container .calc__display {
+  width: 100%;
+  height: 90px;
+  border-radius: 15px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: end;
 }/*# sourceMappingURL=main.css.map */
