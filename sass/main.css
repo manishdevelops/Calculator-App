@@ -77,7 +77,8 @@ body .calc .calc__container .calc__display {
   border-radius: 15px;
 }
 body .calc .calc__container .calc__numberContainer {
-  padding: 1.5rem;
+  padding: 1.6rem 1.3rem;
+  border-radius: 10px;
   background-color: cyan;
 }
 body .calc .calc__container .calc__numberContainer .rows {
@@ -88,7 +89,7 @@ body .calc .calc__container .calc__numberContainer .rows {
 body .calc .calc__container .calc__numberContainer .rows .keyStyle {
   all: unset;
   background-color: yellow;
-  width: 60px;
+  width: 63px;
   height: 70px;
   text-align: center;
   border-radius: 5px;
@@ -96,5 +97,19 @@ body .calc .calc__container .calc__numberContainer .rows .keyStyle {
   box-shadow: 0 4px 0 0.2px #b4a597;
 }
 body .calc .calc__container .calc__numberContainer .rows .delBtn {
+  font-size: 1.3rem;
+}
+body .calc .calc__container .calc__numberContainer .row-5 {
+  display: flex;
+  justify-content: space-between;
+}
+body .calc .calc__container .calc__numberContainer .row-5 .resetBtn, body .calc .calc__container .calc__numberContainer .row-5 .equalesBtn {
+  all: unset;
+  width: 137px;
+  text-align: center;
+  height: 70px;
+  background-color: yellow;
+  border-radius: 5px;
   font-size: 1.5rem;
+  box-shadow: 0 4px 0 0.2px #b4a597;
 }/*# sourceMappingURL=main.css.map */
