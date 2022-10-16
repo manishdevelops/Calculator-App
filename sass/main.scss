@@ -39,25 +39,28 @@ body{
           all: unset;
           display: flex;
           align-items: center;
-          align-items: baseline;
+          // align-items: baseline;
           flex-direction: row;
           background-color: blue;
           border-radius:30px;
           position: relative;
           height: 15px;
           width: 55px;
-          padding: .3rem;
+          padding: .2rem;
 
           input[type=radio]{
             opacity: 0;
             cursor: pointer;
+            height: 17px;
+            width: 17px;
+            -webkit-tap-highlight-color: transparent;
           }
           input{
             cursor: pointer;
           }
           .labels{
             position: relative;
-            transform: translate(-10px,-25px);
+            transform: translate(-10px,-23px);
             font-size: .9rem;
           }
 
@@ -69,6 +72,8 @@ body{
             border-radius: 50%;
             position: absolute;
             cursor: pointer;
+            transition:all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            // display: none;
           }
         }
       }
