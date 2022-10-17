@@ -131,7 +131,7 @@ body .calc .calc__container .calc__numberContainer .row-5 .resetBtn:hover, body 
 }
 @media (min-width: 772px) {
   body .calc .calc__container .calc__numberContainer .row-5 .resetBtn, body .calc .calc__container .calc__numberContainer .row-5 .equalesBtn {
-    height: 62px !important;
+    height: 60px !important;
     border-radius: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
