@@ -11,9 +11,13 @@ body {
 }
 body .calc {
   padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body .calc .calc__container {
   padding: 1.5rem;
+  width: min(536px, 100%);
 }
 body .calc .calc__container .calc__container-header {
   display: flex;

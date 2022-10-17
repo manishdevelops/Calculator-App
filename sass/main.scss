@@ -14,10 +14,13 @@ body{
   font-family: 'League Spartan', sans-serif;
   .calc{
     padding:1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
    .calc__container{
       padding: 1.5rem;
-
+      width: min(536px,100%);
       .calc__container-header{
         display: flex;
         justify-content: space-between;
