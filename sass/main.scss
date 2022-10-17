@@ -112,13 +112,18 @@ body{
             all: unset;
             background-color: yellow;
             width: min(110px,22%);
-            height: 68px;
+            height: 70px;
             text-align: center;
             border-radius: 5px;
             font-size: 2.1rem;
             box-shadow: 0 4px 0 0.2px #b4a597;
             &:hover{
               cursor: pointer;
+            }
+
+            @media (min-width:772px) {
+              height: 62px !important;
+              border-radius: 10px;
             }
           }
           .delBtn{
@@ -141,6 +146,10 @@ body{
             box-shadow: 0 4px 0 0.2px #b4a597;
             &:hover{
               cursor: pointer;
+            }
+            @media (min-width:772px) {
+              height: 62px !important;
+              border-radius: 10px;
             }
           }
         }

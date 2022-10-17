@@ -94,7 +94,7 @@ body .calc .calc__container .calc__numberContainer .rows .keyStyle {
   all: unset;
   background-color: yellow;
   width: min(110px, 22%);
-  height: 68px;
+  height: 70px;
   text-align: center;
   border-radius: 5px;
   font-size: 2.1rem;
@@ -102,6 +102,12 @@ body .calc .calc__container .calc__numberContainer .rows .keyStyle {
 }
 body .calc .calc__container .calc__numberContainer .rows .keyStyle:hover {
   cursor: pointer;
+}
+@media (min-width: 772px) {
+  body .calc .calc__container .calc__numberContainer .rows .keyStyle {
+    height: 62px !important;
+    border-radius: 10px;
+  }
 }
 body .calc .calc__container .calc__numberContainer .rows .delBtn {
   font-size: 1.3rem;
@@ -122,4 +128,10 @@ body .calc .calc__container .calc__numberContainer .row-5 .resetBtn, body .calc 
 }
 body .calc .calc__container .calc__numberContainer .row-5 .resetBtn:hover, body .calc .calc__container .calc__numberContainer .row-5 .equalesBtn:hover {
   cursor: pointer;
+}
+@media (min-width: 772px) {
+  body .calc .calc__container .calc__numberContainer .row-5 .resetBtn, body .calc .calc__container .calc__numberContainer .row-5 .equalesBtn {
+    height: 62px !important;
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
