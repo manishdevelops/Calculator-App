@@ -17,7 +17,7 @@ body .calc {
 }
 body .calc .calc__container {
   padding: 1.5rem;
-  width: min(536px, 100%);
+  width: min(589px, 100%);
 }
 body .calc .calc__container .calc__container-header {
   display: flex;
@@ -93,12 +93,15 @@ body .calc .calc__container .calc__numberContainer .rows {
 body .calc .calc__container .calc__numberContainer .rows .keyStyle {
   all: unset;
   background-color: yellow;
-  width: min(94px, 22%);
+  width: min(110px, 22%);
   height: 68px;
   text-align: center;
   border-radius: 5px;
   font-size: 2.1rem;
   box-shadow: 0 4px 0 0.2px #b4a597;
+}
+body .calc .calc__container .calc__numberContainer .rows .keyStyle:hover {
+  cursor: pointer;
 }
 body .calc .calc__container .calc__numberContainer .rows .delBtn {
   font-size: 1.3rem;
@@ -109,11 +112,14 @@ body .calc .calc__container .calc__numberContainer .row-5 {
 }
 body .calc .calc__container .calc__numberContainer .row-5 .resetBtn, body .calc .calc__container .calc__numberContainer .row-5 .equalesBtn {
   all: unset;
-  width: 137px;
+  width: min(239px, 48%);
   text-align: center;
   height: 70px;
   background-color: yellow;
   border-radius: 5px;
   font-size: 1.5rem;
   box-shadow: 0 4px 0 0.2px #b4a597;
+}
+body .calc .calc__container .calc__numberContainer .row-5 .resetBtn:hover, body .calc .calc__container .calc__numberContainer .row-5 .equalesBtn:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

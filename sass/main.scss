@@ -20,7 +20,7 @@ body{
 
    .calc__container{
       padding: 1.5rem;
-      width: min(536px,100%);
+      width: min(589px,100%);
       .calc__container-header{
         display: flex;
         justify-content: space-between;
@@ -107,15 +107,19 @@ body{
           display: flex;
           justify-content: space-between;
           margin-bottom: 1rem;
+
           .keyStyle{
             all: unset;
             background-color: yellow;
-            width: min(94px,22%);
+            width: min(110px,22%);
             height: 68px;
             text-align: center;
             border-radius: 5px;
             font-size: 2.1rem;
             box-shadow: 0 4px 0 0.2px #b4a597;
+            &:hover{
+              cursor: pointer;
+            }
           }
           .delBtn{
             font-size: 1.3rem ;
@@ -125,15 +129,19 @@ body{
         .row-5{
           display: flex;
           justify-content: space-between;
+
           .resetBtn,.equalesBtn{
             all: unset;
-            width: 137px;
+            width: min(239px,48%);
             text-align: center;
             height: 70px;
             background-color: yellow;
             border-radius: 5px;
             font-size: 1.5rem;
             box-shadow: 0 4px 0 0.2px #b4a597;
+            &:hover{
+              cursor: pointer;
+            }
           }
         }
       }
