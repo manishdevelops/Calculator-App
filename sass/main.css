@@ -6,7 +6,6 @@
 }
 
 body {
-  background-color: hsl(224deg, 28%, 35%);
   font-family: "League Spartan", sans-serif;
 }
 body .calc {
@@ -14,6 +13,7 @@ body .calc {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 body .calc .calc__container {
   padding: 1.5rem;
@@ -134,4 +134,8 @@ body .calc .calc__container .calc__numberContainer .row-5 .resetBtn:hover, body 
     height: 60px !important;
     border-radius: 10px;
   }
+}
+
+.calc {
+  background-color: hsl(225deg, 21%, 49%);
 }/*# sourceMappingURL=main.css.map */

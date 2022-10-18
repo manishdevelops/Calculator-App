@@ -8,15 +8,19 @@
   box-sizing: border-box;
 }
 
+@mixin setBg($background) {
+  background-color: $background;
+}
 
 body{
-  background-color: var.$Desaturateddarkblue;
+  // background-color: var.$Desaturateddarkblue;
   font-family: 'League Spartan', sans-serif;
   .calc{
     padding:1.5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 
    .calc__container{
       padding: 1.5rem;
@@ -156,4 +160,10 @@ body{
       }
    }
   }
+}
+
+//js files
+
+.calc{
+    @include setBg(var.$Desaturateddarkblue1);
 }
