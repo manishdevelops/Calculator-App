@@ -46,7 +46,7 @@ body .calc .calc__container .calc__container-header .calc__header-themeContainer
   position: relative;
   height: 15px;
   width: 55px;
-  padding: 0.2rem;
+  padding: 0.3rem;
 }
 body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__header-btns input[type=radio] {
   opacity: 0;
