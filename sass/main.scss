@@ -32,19 +32,21 @@
     background-color: var.$Lightgrayishorange !important;
     box-shadow: 0 4px 0 0.2px var.$Grayishorange !important;
   }
-  .delBtn{
+  .delBtn,.resetBtn{
     background-color: var.$Desaturateddarkblue1 !important;
     box-shadow: 0 4px 0 0.2px var.$Desaturateddarkblue2 !important;
+  }
+  .equalesBtn{
+    background-color: var.$Red !important;
+    box-shadow: 0 4px 0 0.2px var.$Darkred !important;
   }
   
 }
 .theme1{
   @include setBg(var.$Verydarkdesaturatedblue1);
-  // @include setBg(var.$Desaturateddarkblue2);
 }
 
 body{
-  // background-color: var.$Desaturateddarkblue;
   font-family: 'League Spartan', sans-serif;
   .calc{
     padding:1.5rem 0;
@@ -68,7 +70,6 @@ body{
           justify-content: space-between;
           align-items: center;
           width: 125px;
-          // background-color: red;
 
           .calc__theme{
             font-size:.7rem;
@@ -78,9 +79,7 @@ body{
             all: unset;
             display: flex;
             align-items: center;
-            // align-items: baseline;
             flex-direction: row;
-            // background-color: blue;
             border-radius:30px;
             position: relative;
             height: 15px;
@@ -111,7 +110,6 @@ body{
               position: absolute;
               cursor: pointer;
               transition:all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-              // display: none;
             }
           }
         }
@@ -120,7 +118,6 @@ body{
         width: 100%;
         height: 90px;
         margin: 2rem 0;
-        // background-color: wheat;
         // display: flex;
         // justify-content: end;
         // align-items: center;
@@ -135,7 +132,6 @@ body{
         padding: 1.6rem 1.3rem;
         border-radius: 10px;
 
-        // background-color: cyan;
         
         .rows{
           display: flex;
@@ -144,7 +140,6 @@ body{
 
           .keyStyle{
             all: unset;
-            // background-color: yellow;
             width: min(110px,22%);
             height: 70px;
             text-align: center;
@@ -173,10 +168,8 @@ body{
             width: min(239px,48%);
             text-align: center;
             height: 70px;
-            background-color: yellow;
             border-radius: 5px;
             font-size: 1.5rem;
-            box-shadow: 0 4px 0 0.2px #b4a597;
             &:hover{
               cursor: pointer;
             }
@@ -191,9 +184,4 @@ body{
   }
 }
 
-//js files
-// @mixin setBbg($bgColor){
-//   .calc{
-//     background-color: red;
-//   }
-// }
+

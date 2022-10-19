@@ -27,9 +27,13 @@
   background-color: hsl(30deg, 25%, 89%) !important;
   box-shadow: 0 4px 0 0.2px hsl(28deg, 16%, 65%) !important;
 }
-.theme1 .delBtn {
+.theme1 .delBtn, .theme1 .resetBtn {
   background-color: hsl(225deg, 21%, 49%) !important;
   box-shadow: 0 4px 0 0.2px hsl(224deg, 28%, 35%) !important;
+}
+.theme1 .equalesBtn {
+  background-color: hsl(6deg, 63%, 50%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(6deg, 70%, 34%) !important;
 }
 
 body {
@@ -142,10 +146,8 @@ body .calc .calc__container .calc__numberContainer .row-5 .resetBtn, body .calc 
   width: min(239px, 48%);
   text-align: center;
   height: 70px;
-  background-color: yellow;
   border-radius: 5px;
   font-size: 1.5rem;
-  box-shadow: 0 4px 0 0.2px #b4a597;
 }
 body .calc .calc__container .calc__numberContainer .row-5 .resetBtn:hover, body .calc .calc__container .calc__numberContainer .row-5 .equalesBtn:hover {
   cursor: pointer;
