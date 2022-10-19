@@ -8,42 +8,52 @@
   box-sizing: border-box;
 }
 
-@mixin setBg($bgColor){
-  // background-color: $bgColor;
+@mixin setBg($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$delBg,$delShadow){
   .calc{
     background-color:$bgColor;
   }
   .calc__container-logo,.labels,.calc__theme{
-    color: var.$White;
+    color: $headerTextColor;
   }
   .calc__header-btns{
-    background-color: var.$Verydarkdesaturatedblue2 !important;
+    background-color:$toggleBg !important;
   }
   .toggleBtn{
     background-color: var.$Red !important;
   }
   .calc__display{
-    background-color: var.$Verydarkdesaturatedblue3;
+    background-color: $screenBg;
   }
   .calc__numberContainer{
-    background-color: var.$Verydarkdesaturatedblue2 !important;
+    background-color: $mainBg !important;
   }
   .numsAndOperators{
-    background-color: var.$Lightgrayishorange !important;
-    box-shadow: 0 4px 0 0.2px var.$Grayishorange !important;
+    background-color: $numsAndOpBg !important;
+    box-shadow: 0 4px 0 0.2px $numsAndOpShadow !important;
   }
   .delBtn,.resetBtn{
-    background-color: var.$Desaturateddarkblue1 !important;
-    box-shadow: 0 4px 0 0.2px var.$Desaturateddarkblue2 !important;
+    background-color: $delAndResetBg !important;
+    box-shadow: 0 4px 0 0.2px $delAndResetShadow !important;
   }
   .equalesBtn{
-    background-color: var.$Red !important;
-    box-shadow: 0 4px 0 0.2px var.$Darkred !important;
+    background-color:$delBg !important;
+    box-shadow: 0 4px 0 0.2px $delShadow !important;
   }
   
 }
 .theme1{
-  @include setBg(var.$Verydarkdesaturatedblue1);
+  @include setBg(var.$Verydarkdesaturatedblue1,
+  var.$White, 
+  var.$Verydarkdesaturatedblue2,
+  var.$Verydarkdesaturatedblue3,
+  var.$Verydarkdesaturatedblue2,
+  var.$Lightgrayishorange,
+  var.$Grayishorange,
+  var.$Desaturateddarkblue1,
+  var.$Desaturateddarkblue2,
+  var.$Red,
+  var.$Darkred
+  );
 }
 
 body{
