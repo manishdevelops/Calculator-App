@@ -5,6 +5,37 @@
   box-sizing: border-box;
 }
 
+.theme3 .calc {
+  background-color: hsl(268deg, 75%, 9%);
+}
+.theme3 .calc__container-logo, .theme3 .labels, .theme3 .calc__theme {
+  color: hsl(52deg, 100%, 62%);
+}
+.theme3 .calc__header-btns {
+  background-color: hsl(268deg, 71%, 12%) !important;
+}
+.theme3 .toggleBtn {
+  background-color: hsl(176deg, 100%, 44%) !important;
+}
+.theme3 .calc__display {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.theme3 .calc__numberContainer {
+  background-color: hsl(268deg, 71%, 12%) !important;
+}
+.theme3 .numsAndOperators {
+  background-color: hsl(268deg, 47%, 21%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(290deg, 70%, 36%) !important;
+}
+.theme3 .delBtn, .theme3 .resetBtn {
+  background-color: hsl(281deg, 89%, 26%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(285deg, 91%, 52%) !important;
+}
+.theme3 .equalesBtn {
+  background-color: hsl(176deg, 100%, 44%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(177deg, 92%, 70%) !important;
+}
+
 body {
   font-family: "League Spartan", sans-serif;
 }
