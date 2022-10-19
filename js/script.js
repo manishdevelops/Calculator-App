@@ -2,7 +2,7 @@
 
 const switchOpts=document.querySelectorAll('.btnOptions');
 const toggleSwitchBtn=document.querySelector('.toggleBtn');
-
+const bodyy = document.querySelector('body');
 
 const totalSwitches=switchOpts.length;
 let currSwitch=1;
@@ -15,7 +15,10 @@ switchOpts.forEach(function(ele){
   ele.addEventListener('click',function(e){
     if (e.target.classList.contains('btnOptions')){
       const TargetBtn=+ e.target.dataset.index;
-      console.log(typeof TargetBtn);
+      console.log(TargetBtn);
+      // console.log(typeof TargetBtn);
+      bodyy.removeAttribute('class');
+      bodyy.classList.add(`theme${TargetBtn}`);
       goToBtn(TargetBtn);
       currSwitch=TargetBtn;
     }
