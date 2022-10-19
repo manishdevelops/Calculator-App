@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-@mixin setBg($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$delBg,$delShadow){
+@mixin setColors($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$eqlsBg,$eqlsShadow){
   .calc{
     background-color:$bgColor;
   }
@@ -36,24 +36,38 @@
     box-shadow: 0 4px 0 0.2px $delAndResetShadow !important;
   }
   .equalesBtn{
-    background-color:$delBg !important;
+    background-color:$eqlsBg !important;
     box-shadow: 0 4px 0 0.2px $delShadow !important;
   }
   
 }
-.theme1{
-  @include setBg(var.$Verydarkdesaturatedblue1,
-  var.$White, 
-  var.$Verydarkdesaturatedblue2,
-  var.$Verydarkdesaturatedblue3,
-  var.$Verydarkdesaturatedblue2,
-  var.$Lightgrayishorange,
-  var.$Grayishorange,
-  var.$Desaturateddarkblue1,
-  var.$Desaturateddarkblue2,
-  var.$Red,
-  var.$Darkred
-  );
+// .theme1{
+//   @include setColors(var.$Verydarkdesaturatedblue1,
+//   var.$White, 
+//   var.$Verydarkdesaturatedblue2,
+//   var.$Verydarkdesaturatedblue3,
+//   var.$Verydarkdesaturatedblue2,
+//   var.$Lightgrayishorange,
+//   var.$Grayishorange,
+//   var.$Desaturateddarkblue1,
+//   var.$Desaturateddarkblue2,
+//   var.$Red,
+//   var.$Darkred
+//   )
+// }
+.theme2{
+  @include setColors(var.$Lightgray ,
+  var.$Verydarkgrayishyellow,
+  var.$Grayishred,
+  var.$Verylightgray,
+  var.$Grayishred,
+  var.$Lightgrayishyellow,
+  var.$Darkgrayishorange,
+  var.$Darkmoderatecyan,
+  var.$Verydarkcyan,
+  var.$Orange ,
+  var.$Darkorange
+  )
 }
 
 body{
