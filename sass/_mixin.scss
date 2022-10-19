@@ -33,7 +33,7 @@
   }
   
 }
-.theme1{
+.theme0{
   @include setColors(var.$Verydarkdesaturatedblue1,
   var.$White, 
   var.$Verydarkdesaturatedblue2,
@@ -45,9 +45,12 @@
   var.$Desaturateddarkblue2,
   var.$Red,
   var.$Darkred
-  )
+  );
+  .delBtn,.resetBtn,.equalesBtn{
+    color:var.$White !important;
+  }
 }
-.theme2{
+.theme1{
   @include setColors(var.$Lightgray,
   var.$Verydarkgrayishyellow,
   var.$Grayishred,
@@ -59,9 +62,13 @@
   var.$Verydarkcyan,
   var.$Orange ,
   var.$Darkorange
-  )
+  );
+  .delBtn,.resetBtn,.equalesBtn{
+    color:var.$White !important;
+  }
+
 }
-.theme3{
+.theme2{
   @include setColors(var.$Verydarkviolet1,
   var.$Lightyellow ,
   var.$Purecyan ,
@@ -73,5 +80,14 @@
   var.$Vividmagenta,
   var.$Purecyan,
   var.$Softcyan
-  )
+  );
+  .delBtn,.resetBtn{
+    color:var.$White !important;
+  }
+  .equalesBtn{
+    color:var.$Verydarkblue !important;
+  }
+  .numsAndOperators{
+    color: var.$Lightyellow !important;
+  }
 }
