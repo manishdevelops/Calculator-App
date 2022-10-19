@@ -25,10 +25,21 @@
   .calc__display{
     background-color: var.$Verydarkdesaturatedblue3;
   }
+  .calc__numberContainer{
+    background-color: var.$Verydarkdesaturatedblue2 !important;
+  }
+  .numsAndOperators{
+    background-color: var.$Lightgrayishorange !important;
+    box-shadow: 0 4px 0 0.2px var.$Grayishorange !important;
+  }
+  .delBtn{
+    background-color: var.$Desaturateddarkblue1 !important;
+    box-shadow: 0 4px 0 0.2px var.$Desaturateddarkblue2 !important;
+  }
   
 }
 .theme1{
-  @include setBg(var.$Desaturateddarkblue1);
+  @include setBg(var.$Verydarkdesaturatedblue1);
   // @include setBg(var.$Desaturateddarkblue2);
 }
 
@@ -124,7 +135,7 @@ body{
         padding: 1.6rem 1.3rem;
         border-radius: 10px;
 
-        background-color: cyan;
+        // background-color: cyan;
         
         .rows{
           display: flex;
@@ -133,13 +144,12 @@ body{
 
           .keyStyle{
             all: unset;
-            background-color: yellow;
+            // background-color: yellow;
             width: min(110px,22%);
             height: 70px;
             text-align: center;
             border-radius: 5px;
             font-size: 2.1rem;
-            box-shadow: 0 4px 0 0.2px #b4a597;
             &:hover{
               cursor: pointer;
             }

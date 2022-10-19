@@ -6,7 +6,7 @@
 }
 
 .theme1 .calc {
-  background-color: hsl(225deg, 21%, 49%);
+  background-color: hsl(222deg, 26%, 31%);
 }
 .theme1 .calc__container-logo, .theme1 .labels, .theme1 .calc__theme {
   color: hsl(0deg, 0%, 100%);
@@ -19,6 +19,17 @@
 }
 .theme1 .calc__display {
   background-color: hsl(224deg, 36%, 15%);
+}
+.theme1 .calc__numberContainer {
+  background-color: hsl(223deg, 31%, 20%) !important;
+}
+.theme1 .numsAndOperators {
+  background-color: hsl(30deg, 25%, 89%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(28deg, 16%, 65%) !important;
+}
+.theme1 .delBtn {
+  background-color: hsl(225deg, 21%, 49%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(224deg, 28%, 35%) !important;
 }
 
 body {
@@ -96,7 +107,6 @@ body .calc .calc__container .calc__display {
 body .calc .calc__container .calc__numberContainer {
   padding: 1.6rem 1.3rem;
   border-radius: 10px;
-  background-color: cyan;
 }
 body .calc .calc__container .calc__numberContainer .rows {
   display: flex;
@@ -105,13 +115,11 @@ body .calc .calc__container .calc__numberContainer .rows {
 }
 body .calc .calc__container .calc__numberContainer .rows .keyStyle {
   all: unset;
-  background-color: yellow;
   width: min(110px, 22%);
   height: 70px;
   text-align: center;
   border-radius: 5px;
   font-size: 2.1rem;
-  box-shadow: 0 4px 0 0.2px #b4a597;
 }
 body .calc .calc__container .calc__numberContainer .rows .keyStyle:hover {
   cursor: pointer;
