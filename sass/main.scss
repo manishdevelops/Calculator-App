@@ -1,4 +1,5 @@
-@use 'variables' as var;
+// @use 'variables' as var;
+@use 'mixin';
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
 
@@ -8,39 +9,39 @@
   box-sizing: border-box;
 }
 
-@mixin setColors($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$eqlsBg,$eqlsShadow){
-  .calc{
-    background-color:$bgColor;
-  }
-  .calc__container-logo,.labels,.calc__theme{
-    color: $headerTextColor;
-  }
-  .calc__header-btns{
-    background-color:$mainBg !important;
-  }
-  .toggleBtn{
-    background-color: $toggleBg !important;
-  }
-  .calc__display{
-    background-color: $screenBg;
-  }
-  .calc__numberContainer{
-    background-color: $mainBg !important;
-  }
-  .numsAndOperators{
-    background-color: $numsAndOpBg !important;
-    box-shadow: 0 4px 0 0.2px $numsAndOpShadow !important;
-  }
-  .delBtn,.resetBtn{
-    background-color: $delAndResetBg !important;
-    box-shadow: 0 4px 0 0.2px $delAndResetShadow !important;
-  }
-  .equalesBtn{
-    background-color:$eqlsBg !important;
-    box-shadow: 0 4px 0 0.2px $eqlsShadow !important;
-  }
+// @mixin setColors($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$eqlsBg,$eqlsShadow){
+//   .calc{
+//     background-color:$bgColor;
+//   }
+//   .calc__container-logo,.labels,.calc__theme{
+//     color: $headerTextColor;
+//   }
+//   .calc__header-btns{
+//     background-color:$mainBg !important;
+//   }
+//   .toggleBtn{
+//     background-color: $eqlsBg !important;
+//   }
+//   .calc__display{
+//     background-color: $screenBg;
+//   }
+//   .calc__numberContainer{
+//     background-color: $mainBg !important;
+//   }
+//   .numsAndOperators{
+//     background-color: $numsAndOpBg !important;
+//     box-shadow: 0 4px 0 0.2px $numsAndOpShadow !important;
+//   }
+//   .delBtn,.resetBtn{
+//     background-color: $delAndResetBg !important;
+//     box-shadow: 0 4px 0 0.2px $delAndResetShadow !important;
+//   }
+//   .equalesBtn{
+//     background-color:$eqlsBg !important;
+//     box-shadow: 0 4px 0 0.2px $eqlsShadow !important;
+//   }
   
-}
+// }
 // .theme1{
 //   @include setColors(var.$Verydarkdesaturatedblue1,
 //   var.$White, 
@@ -69,20 +70,20 @@
 //   var.$Darkorange
 //   )
 // }
-.theme3{
-  @include setColors(var.$Verydarkviolet1,
-  var.$Lightyellow ,
-  var.$Purecyan ,
-  var.$Verydarkviolet2 ,
-  var.$Verydarkviolet2 ,
-  var.$Veryarkviolet ,
-  var.$Darkmagenta ,
-  var.$Darkviolet,
-  var.$Vividmagenta,
-  var.$Purecyan,
-  var.$Softcyan
-  )
-}
+// .theme3{
+//   @include setColors(var.$Verydarkviolet1,
+//   var.$Lightyellow ,
+//   var.$Purecyan ,
+//   var.$Verydarkviolet2 ,
+//   var.$Verydarkviolet2 ,
+//   var.$Veryarkviolet ,
+//   var.$Darkmagenta ,
+//   var.$Darkviolet,
+//   var.$Vividmagenta,
+//   var.$Purecyan,
+//   var.$Softcyan
+//   )
+// }
 
 body{
   font-family: 'League Spartan', sans-serif;

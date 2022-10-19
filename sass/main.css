@@ -1,8 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.theme1 .calc {
+  background-color: hsl(222deg, 26%, 31%);
+}
+.theme1 .calc__container-logo, .theme1 .labels, .theme1 .calc__theme {
+  color: hsl(0deg, 0%, 100%);
+}
+.theme1 .calc__header-btns {
+  background-color: hsl(223deg, 31%, 20%) !important;
+}
+.theme1 .toggleBtn {
+  background-color: hsl(6deg, 63%, 50%) !important;
+}
+.theme1 .calc__display {
+  background-color: hsl(224deg, 36%, 15%);
+}
+.theme1 .calc__numberContainer {
+  background-color: hsl(223deg, 31%, 20%) !important;
+}
+.theme1 .numsAndOperators {
+  background-color: hsl(30deg, 25%, 89%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(28deg, 16%, 65%) !important;
+}
+.theme1 .delBtn, .theme1 .resetBtn {
+  background-color: hsl(225deg, 21%, 49%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(224deg, 28%, 35%) !important;
+}
+.theme1 .equalesBtn {
+  background-color: hsl(6deg, 63%, 50%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(6deg, 70%, 34%) !important;
+}
+
+.theme2 .calc {
+  background-color: hsl(0deg, 0%, 90%);
+}
+.theme2 .calc__container-logo, .theme2 .labels, .theme2 .calc__theme {
+  color: hsl(60deg, 10%, 19%);
+}
+.theme2 .calc__header-btns {
+  background-color: hsl(0deg, 5%, 81%) !important;
+}
+.theme2 .toggleBtn {
+  background-color: hsl(25deg, 98%, 40%) !important;
+}
+.theme2 .calc__display {
+  background-color: hsl(0deg, 0%, 93%);
+}
+.theme2 .calc__numberContainer {
+  background-color: hsl(0deg, 5%, 81%) !important;
+}
+.theme2 .numsAndOperators {
+  background-color: hsl(45deg, 7%, 89%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(35deg, 11%, 61%) !important;
+}
+.theme2 .delBtn, .theme2 .resetBtn {
+  background-color: hsl(185deg, 42%, 37%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(185deg, 58%, 25%) !important;
+}
+.theme2 .equalesBtn {
+  background-color: hsl(25deg, 98%, 40%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(25deg, 99%, 27%) !important;
 }
 
 .theme3 .calc {
@@ -34,6 +90,12 @@
 .theme3 .equalesBtn {
   background-color: hsl(176deg, 100%, 44%) !important;
   box-shadow: 0 4px 0 0.2px hsl(177deg, 92%, 70%) !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
