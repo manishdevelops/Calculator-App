@@ -35,10 +35,6 @@
 .theme0 .delBtn, .theme0 .resetBtn, .theme0 .equalesBtn {
   color: hsl(0deg, 0%, 100%) !important;
 }
-.theme0 .numsAndOperators:hover {
-  background-color: hsl(0deg, 0%, 100%) !important;
-  box-shadow: hsl(6deg, 63%, 50%) !important;
-}
 
 .theme1 .calc {
   background-color: hsl(0deg, 0%, 90%);
