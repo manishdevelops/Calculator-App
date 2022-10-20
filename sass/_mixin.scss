@@ -51,12 +51,16 @@
   );
   .delBtn,.resetBtn,.equalesBtn{
     color:var.$White !important;
+    // &:hover{
+    //   background-color:  !important;
+    // }
   }
-  // .numsAndOperators{
-  //   &:hover{
-  //     background-color: var.$White !important;
-  //   }
-  // }
+  .numsAndOperators{
+    &:hover{
+      background-color: var.$White !important;
+      box-shadow: var.hsl(27, 75%, 5%) !important;
+    }
+  }
   
 }
 .theme1{
