@@ -49,6 +49,12 @@
   .delBtn,.resetBtn,.equalesBtn{
     color:var.$White !important;
   }
+  .numsAndOperators{
+    &:hover{
+      background-color: var.$White !important;
+    }
+  }
+  
 }
 .theme1{
   @include setColors(var.$Lightgray,
@@ -83,6 +89,7 @@
   );
   .delBtn,.resetBtn{
     color:var.$White !important;
+
   }
   .equalesBtn{
     color:var.$Verydarkblue !important;
