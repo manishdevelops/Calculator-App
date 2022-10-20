@@ -9,6 +9,9 @@
   background-color: hsl(223deg, 31%, 20%) !important;
 }
 .theme0 .toggleBtn {
+  background-color: hsl(6deg, 70%, 34%) !important;
+}
+.theme0 .toggleBtn:hover {
   background-color: hsl(6deg, 63%, 50%) !important;
 }
 .theme0 .calc__display {
@@ -32,9 +35,6 @@
 .theme0 .delBtn, .theme0 .resetBtn, .theme0 .equalesBtn {
   color: hsl(0deg, 0%, 100%) !important;
 }
-.theme0 .numsAndOperators:hover {
-  background-color: hsl(0deg, 0%, 100%) !important;
-}
 
 .theme1 .calc {
   background-color: hsl(0deg, 0%, 90%);
@@ -46,6 +46,9 @@
   background-color: hsl(0deg, 5%, 81%) !important;
 }
 .theme1 .toggleBtn {
+  background-color: hsl(25deg, 99%, 27%) !important;
+}
+.theme1 .toggleBtn:hover {
   background-color: hsl(25deg, 98%, 40%) !important;
 }
 .theme1 .calc__display {
@@ -80,6 +83,9 @@
   background-color: hsl(268deg, 71%, 12%) !important;
 }
 .theme2 .toggleBtn {
+  background-color: hsl(177deg, 92%, 70%) !important;
+}
+.theme2 .toggleBtn:hover {
   background-color: hsl(176deg, 100%, 44%) !important;
 }
 .theme2 .calc__display {

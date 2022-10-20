@@ -11,7 +11,10 @@
     background-color:$mainBg !important;
   }
   .toggleBtn{
-    background-color: $eqlsBg !important;
+    background-color: $eqlsShadow !important;
+    &:hover{
+      background-color: $eqlsBg !important;
+    }
   }
   .calc__display{
     background-color: $screenBg;
@@ -49,11 +52,11 @@
   .delBtn,.resetBtn,.equalesBtn{
     color:var.$White !important;
   }
-  .numsAndOperators{
-    &:hover{
-      background-color: var.$White !important;
-    }
-  }
+  // .numsAndOperators{
+  //   &:hover{
+  //     background-color: var.$White !important;
+  //   }
+  // }
   
 }
 .theme1{
