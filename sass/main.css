@@ -28,7 +28,7 @@
   filter: brightness(125%) !important;
 }
 .theme0 .numsAndOperators:active {
-  filter: brightness(125%) !important;
+  filter: brightness(150%) !important;
   /* Key pressed effect */
   transform: translateY(4px) !important;
   box-shadow: none !important;
@@ -95,7 +95,7 @@
   filter: brightness(125%) !important;
 }
 .theme1 .numsAndOperators:active {
-  filter: brightness(125%) !important;
+  filter: brightness(150%) !important;
   /* Key pressed effect */
   transform: translateY(4px) !important;
   box-shadow: none !important;
@@ -162,7 +162,7 @@
   filter: brightness(125%) !important;
 }
 .theme2 .numsAndOperators:active {
-  filter: brightness(125%) !important;
+  filter: brightness(150%) !important;
   /* Key pressed effect */
   transform: translateY(4px) !important;
   box-shadow: none !important;
@@ -288,7 +288,7 @@ body .calc .calc__container .calc__numberContainer {
 body .calc .calc__container .calc__numberContainer .rows {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 body .calc .calc__container .calc__numberContainer .rows .keyStyle {
   all: unset;
