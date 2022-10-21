@@ -123,15 +123,23 @@
   .delBtn,.resetBtn{
     color:var.$White !important;
     &:hover{
-      background-color: hsl(185, 34%, 45%) !important;
-      box-shadow:0 4px 0 0.2px hsl(185, 54%, 36%) !important;
+      background-color: hsl(176, 92%, 64%) !important;
+      box-shadow:0 4px 0 0.2px hsl(177, 74%, 73%) !important;
     }
 
   }
   .equalesBtn{
     color:var.$Verydarkblue !important;
+    &:hover{
+      background-color: hsl(177, 86%, 62%) !important;
+      box-shadow:0 4px 0 0.2px hsl(177, 83%, 77%) !important;
+    }
   }
   .numsAndOperators{
     color: var.$Lightyellow !important;
+    &:hover{
+      background-color: var.$White !important;
+      box-shadow:0 4px 0 0.2px rgb(178, 175, 169) !important;
+    }
   }
 }
