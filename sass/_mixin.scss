@@ -49,18 +49,21 @@
   var.$Red,
   var.$Darkred
   );
-  .delBtn,.resetBtn,.equalesBtn{
+  .equalesBtn{
     color:var.$White !important;
-    // &:hover{
-    //   background-color:  !important;
-    // }
+    &:hover{
+      background-color:0 4px 0 0.2px yellow !important;
+    }
   }
-  // .numsAndOperators{
-  //   &:hover{
-  //     background-color: var.$White !important;
-  //     box-shadow: var.hsl(27, 75%, 5%) !important;
-  //   }
+  // .delBtn,.resetBtn{
+
   // }
+  .numsAndOperators{
+    &:hover{
+      background-color: var.$White !important;
+      box-shadow:0 4px 0 0.2px rgb(176, 173, 167) !important;
+    }
+  }
   
 }
 .theme1{
