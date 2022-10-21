@@ -52,12 +52,17 @@
   .equalesBtn{
     color:var.$White !important;
     &:hover{
-      background-color:0 4px 0 0.2px yellow !important;
+      background-color: rgb(220, 89, 66) !important;
+      box-shadow:0 4px 0 0.2px rgb(160, 69, 53) !important;
     }
   }
-  // .delBtn,.resetBtn{
-
-  // }
+  .delBtn,.resetBtn{
+    color:var.$White !important;
+    &:hover{
+      background-color: hsl(225, 29%, 59%) !important;
+      box-shadow:0 4px 0 0.2px hsl(226, 18%, 42%) !important;
+    }
+  }
   .numsAndOperators{
     &:hover{
       background-color: var.$White !important;

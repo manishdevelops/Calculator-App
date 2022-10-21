@@ -36,7 +36,15 @@
   color: hsl(0deg, 0%, 100%) !important;
 }
 .theme0 .equalesBtn:hover {
-  background-color: 0 4px 0 0.2px yellow !important;
+  background-color: rgb(220, 89, 66) !important;
+  box-shadow: 0 4px 0 0.2px rgb(160, 69, 53) !important;
+}
+.theme0 .delBtn, .theme0 .resetBtn {
+  color: hsl(0deg, 0%, 100%) !important;
+}
+.theme0 .delBtn:hover, .theme0 .resetBtn:hover {
+  background-color: hsl(225deg, 29%, 59%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(226deg, 18%, 42%) !important;
 }
 .theme0 .numsAndOperators:hover {
   background-color: hsl(0deg, 0%, 100%) !important;
