@@ -84,8 +84,26 @@
   var.$Orange ,
   var.$Darkorange
   );
-  .delBtn,.resetBtn,.equalesBtn{
+  .delBtn,.resetBtn{
     color:var.$White !important;
+    &:hover{
+      background-color: hsl(185, 34%, 45%) !important;
+      box-shadow:0 4px 0 0.2px hsl(185, 54%, 36%) !important;
+    }
+  }
+  .equalesBtn{
+    color:var.$White !important;
+    &:hover{
+      background-color: hsl(25, 79%, 52%) !important;
+      box-shadow:0 4px 0 0.2px hsl(25, 80%, 42%) !important;
+    }
+
+  }
+  .numsAndOperators{
+    &:hover{
+      background-color: var.$White !important;
+      box-shadow:0 4px 0 0.2px rgb(178, 175, 169) !important;
+    }
   }
 
 }
@@ -104,6 +122,10 @@
   );
   .delBtn,.resetBtn{
     color:var.$White !important;
+    &:hover{
+      background-color: hsl(185, 34%, 45%) !important;
+      box-shadow:0 4px 0 0.2px hsl(185, 54%, 36%) !important;
+    }
 
   }
   .equalesBtn{

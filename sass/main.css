@@ -84,8 +84,23 @@
   background-color: hsl(25deg, 98%, 40%) !important;
   box-shadow: 0 4px 0 0.2px hsl(25deg, 99%, 27%) !important;
 }
-.theme1 .delBtn, .theme1 .resetBtn, .theme1 .equalesBtn {
+.theme1 .delBtn, .theme1 .resetBtn {
   color: hsl(0deg, 0%, 100%) !important;
+}
+.theme1 .delBtn:hover, .theme1 .resetBtn:hover {
+  background-color: hsl(185deg, 34%, 45%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(185deg, 54%, 36%) !important;
+}
+.theme1 .equalesBtn {
+  color: hsl(0deg, 0%, 100%) !important;
+}
+.theme1 .equalesBtn:hover {
+  background-color: hsl(25deg, 79%, 52%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(25deg, 80%, 42%) !important;
+}
+.theme1 .numsAndOperators:hover {
+  background-color: hsl(0deg, 0%, 100%) !important;
+  box-shadow: 0 4px 0 0.2px rgb(178, 175, 169) !important;
 }
 
 .theme2 .calc {
@@ -123,6 +138,10 @@
 }
 .theme2 .delBtn, .theme2 .resetBtn {
   color: hsl(0deg, 0%, 100%) !important;
+}
+.theme2 .delBtn:hover, .theme2 .resetBtn:hover {
+  background-color: hsl(185deg, 34%, 45%) !important;
+  box-shadow: 0 4px 0 0.2px hsl(185deg, 54%, 36%) !important;
 }
 .theme2 .equalesBtn {
   color: hsl(198deg, 20%, 13%) !important;
