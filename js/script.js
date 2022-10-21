@@ -16,7 +16,6 @@ switchOpts.forEach(function(ele){
     if (e.target.classList.contains('btnOptions')){
       const TargetBtn=+ e.target.dataset.index;
       console.log(TargetBtn);
-      // console.log(typeof TargetBtn);
       bodyy.removeAttribute('class');
       bodyy.classList.add(`theme${TargetBtn}`);
       goToBtn(TargetBtn);
