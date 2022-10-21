@@ -1,27 +1,34 @@
 @use 'variables' as var;
 
-@mixin setColors($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$eqlsBg,$eqlsShadow,$numKeyHover,$numKeyShadow){
+@mixin setColors($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$eqlsBg,$eqlsShadow,$numKeyHover,$numKeyShadow,$delResetKey,$delresetShadow,$eqsKey,$eqsshadow){
+  
   .calc{
     background-color:$bgColor;
   }
+
   .calc__container-logo,.labels,.calc__theme{
     color: $headerTextColor;
   }
+
   .calc__header-btns{
     background-color:$mainBg !important;
   }
+
   .toggleBtn{
     background-color: $eqlsShadow !important;
     &:hover{
       background-color: $eqlsBg !important;
     }
   }
+
   .calc__display{
     background-color: $screenBg;
   }
+
   .calc__numberContainer{
     background-color: $mainBg !important;
   }
+
   .numsAndOperators{
     background-color: $numsAndOpBg !important;
     box-shadow: 0 4px 0 0.2px $numsAndOpShadow !important;
@@ -30,15 +37,24 @@
       box-shadow:0 4px 0 0.2px $numKeyShadow !important;
     }
   }
+
   .delBtn,.resetBtn{
     background-color: $delAndResetBg !important;
     box-shadow: 0 4px 0 0.2px $delAndResetShadow !important;
+    &:hover{
+      background-color: $delResetKey !important;
+      box-shadow:0 4px 0 0.2px $delAndResetShadow !important;
+    }
 
   }
+
   .equalesBtn{
     background-color:$eqlsBg !important;
     box-shadow: 0 4px 0 0.2px $eqlsShadow !important;
-    
+    &:hover{
+      background-color: $eqsKey !important;
+      box-shadow:0 4px 0 0.2px $eqsshadow !important;
+    }
   }
   
 }
@@ -53,30 +69,21 @@
   var.$Desaturateddarkblue1,
   var.$Desaturateddarkblue2,
   var.$Red,
-  var.$Darkred,var.$White,rgb(176, 173, 167) 
+  var.$Darkred,var.$White,rgb(176, 173, 167),
+  hsl(225, 29%, 59%),hsl(226, 18%, 42%),
+  rgb(220, 89, 66),rgb(160, 69, 53)
   );
+
   .equalesBtn{
     color:var.$White !important;
-    &:hover{
-      background-color: rgb(220, 89, 66) !important;
-      box-shadow:0 4px 0 0.2px rgb(160, 69, 53) !important;
-    }
   }
-  .delBtn,.resetBtn{
+
+  .delBtn, .resetBtn{
     color:var.$White !important;
-    &:hover{
-      background-color: hsl(225, 29%, 59%) !important;
-      box-shadow:0 4px 0 0.2px hsl(226, 18%, 42%) !important;
-    }
   }
-  // .numsAndOperators{
-  //   &:hover{
-  //     background-color: var.$White !important;
-  //     box-shadow:0 4px 0 0.2px rgb(176, 173, 167) !important;
-  //   }
-  // }
-  
+
 }
+
 .theme1{
   @include setColors(var.$Lightgray,
   var.$Verydarkgrayishyellow,
@@ -88,31 +95,21 @@
   var.$Darkmoderatecyan,
   var.$Verydarkcyan,
   var.$Orange ,
-  var.$Darkorange,var.$White,rgb(178, 175, 169)
+  var.$Darkorange,var.$White,rgb(178, 175, 169),
+  hsl(185, 34%, 45%),hsl(185, 54%, 36%),
+  hsl(25, 79%, 52%),hsl(25, 80%, 42%)
   );
+
   .delBtn,.resetBtn{
     color:var.$White !important;
-    &:hover{
-      background-color: hsl(185, 34%, 45%) !important;
-      box-shadow:0 4px 0 0.2px hsl(185, 54%, 36%) !important;
-    }
   }
+
   .equalesBtn{
     color:var.$White !important;
-    &:hover{
-      background-color: hsl(25, 79%, 52%) !important;
-      box-shadow:0 4px 0 0.2px hsl(25, 80%, 42%) !important;
-    }
-
-//   }
-//   .numsAndOperators{
-//     &:hover{
-//       background-color: var.$White !important;
-//       box-shadow:0 4px 0 0.2px rgb(178, 175, 169) !important;
-//     }
   }
 
 }
+
 .theme2{
   @include setColors(var.$Verydarkviolet1,
   var.$Lightyellow ,
@@ -124,28 +121,21 @@
   var.$Darkviolet,
   var.$Vividmagenta,
   var.$Purecyan,
-  var.$Softcyan,rgb(67, 38, 99),hsl(290deg 70% 36%)
+  var.$Softcyan,rgb(67, 38, 99),hsl(290deg 70% 36%),
+  rgb(116, 14, 163),rgb(193, 41, 244),
+  hsl(177, 86%, 62%),hsl(177, 83%, 77%) 
   );
+
   .delBtn,.resetBtn{
     color:var.$White !important;
-    &:hover{
-      background-color: rgb(116, 14, 163) !important;
-      box-shadow:0 4px 0 0.2px rgb(193, 41, 244) !important;
-    }
-
   }
+
   .equalesBtn{
     color:var.$Verydarkblue !important;
-    &:hover{
-      background-color: hsl(177, 86%, 62%) !important;
-      box-shadow:0 4px 0 0.2px hsl(177, 83%, 77%) !important;
-    }
   }
-  // .numsAndOperators{
-  //   color: var.$Lightyellow !important;
-  //   &:hover{
-  //     background-color: rgb(67, 38, 99) !important;
-  //     box-shadow:0 4px 0 0.2px hsl(290deg 70% 36%) !important;
-  //   }
-  // }
+
+  .numsAndOperators{
+    color: var.$Lightyellow !important;
+  }
+
 }
