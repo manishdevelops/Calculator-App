@@ -140,8 +140,8 @@
   color: hsl(0deg, 0%, 100%) !important;
 }
 .theme2 .delBtn:hover, .theme2 .resetBtn:hover {
-  background-color: hsl(176deg, 92%, 64%) !important;
-  box-shadow: 0 4px 0 0.2px hsl(177deg, 74%, 73%) !important;
+  background-color: rgb(116, 14, 163) !important;
+  box-shadow: 0 4px 0 0.2px rgb(193, 41, 244) !important;
 }
 .theme2 .equalesBtn {
   color: hsl(198deg, 20%, 13%) !important;
@@ -154,8 +154,8 @@
   color: hsl(52deg, 100%, 62%) !important;
 }
 .theme2 .numsAndOperators:hover {
-  background-color: hsl(0deg, 0%, 100%) !important;
-  box-shadow: 0 4px 0 0.2px rgb(178, 175, 169) !important;
+  background-color: rgb(67, 38, 99) !important;
+  box-shadow: 0 4px 0 0.2px hsl(290deg, 70%, 36%) !important;
 }
 
 * {

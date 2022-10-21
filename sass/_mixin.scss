@@ -123,8 +123,8 @@
   .delBtn,.resetBtn{
     color:var.$White !important;
     &:hover{
-      background-color: hsl(176, 92%, 64%) !important;
-      box-shadow:0 4px 0 0.2px hsl(177, 74%, 73%) !important;
+      background-color: rgb(116, 14, 163) !important;
+      box-shadow:0 4px 0 0.2px rgb(193, 41, 244) !important;
     }
 
   }
@@ -138,8 +138,8 @@
   .numsAndOperators{
     color: var.$Lightyellow !important;
     &:hover{
-      background-color: var.$White !important;
-      box-shadow:0 4px 0 0.2px rgb(178, 175, 169) !important;
+      background-color: rgb(67, 38, 99) !important;
+      box-shadow:0 4px 0 0.2px hsl(290deg 70% 36%) !important;
     }
   }
 }
