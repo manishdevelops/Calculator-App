@@ -1,6 +1,6 @@
 @use 'variables' as var;
 
-@mixin setColors($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$eqlsBg,$eqlsShadow,$numKeyHover,$numKeyShadow,$delResetKey,$delresetShadow,$eqsKey,$eqsshadow){
+@mixin setColors($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$eqlsBg,$eqlsShadow){
   
   .calc{
     background-color:$bgColor;
@@ -33,18 +33,29 @@
     background-color: $numsAndOpBg !important;
     box-shadow: 0 4px 0 0.2px $numsAndOpShadow !important;
     &:hover{
-      background-color: $numKeyHover !important;
-      box-shadow:0 4px 0 0.2px $numKeyShadow !important;
+			filter: brightness(125%) !important;
+
     }
+    &:active {
+			filter: brightness(125%) !important;
+			/* Key pressed effect */
+			transform: translateY(4px) !important;
+			box-shadow: none !important;
+		}
   }
 
   .delBtn,.resetBtn{
     background-color: $delAndResetBg !important;
     box-shadow: 0 4px 0 0.2px $delAndResetShadow !important;
     &:hover{
-      background-color: $delResetKey !important;
-      box-shadow:0 4px 0 0.2px $delAndResetShadow !important;
+			filter: brightness(125%) !important;
     }
+    &:active {
+			filter: brightness(125%) !important;
+			/* Key pressed effect */
+			transform: translateY(4px) !important;
+			box-shadow: none !important;
+		}
 
   }
 
@@ -52,9 +63,15 @@
     background-color:$eqlsBg !important;
     box-shadow: 0 4px 0 0.2px $eqlsShadow !important;
     &:hover{
-      background-color: $eqsKey !important;
-      box-shadow:0 4px 0 0.2px $eqsshadow !important;
+      filter: brightness(125%) !important;
+			
     }
+    &:active {
+			filter: brightness(125%) !important;
+			/* Key pressed effect */
+			transform: translateY(4px) !important;
+			box-shadow: none !important;
+		}
   }
   
 }
@@ -69,9 +86,7 @@
   var.$Desaturateddarkblue1,
   var.$Desaturateddarkblue2,
   var.$Red,
-  var.$Darkred,var.$White,rgb(176, 173, 167),
-  hsl(225, 29%, 59%),hsl(226, 18%, 42%),
-  rgb(220, 89, 66),rgb(160, 69, 53)
+  var.$Darkred
   );
 
   .equalesBtn{
@@ -95,9 +110,8 @@
   var.$Darkmoderatecyan,
   var.$Verydarkcyan,
   var.$Orange ,
-  var.$Darkorange,var.$White,rgb(178, 175, 169),
-  hsl(185, 34%, 45%),hsl(185, 54%, 36%),
-  hsl(25, 79%, 52%),hsl(25, 80%, 42%)
+  var.$Darkorange
+
   );
 
   .delBtn,.resetBtn{
@@ -121,9 +135,8 @@
   var.$Darkviolet,
   var.$Vividmagenta,
   var.$Purecyan,
-  var.$Softcyan,rgb(67, 38, 99),hsl(290deg 70% 36%),
-  rgb(116, 14, 163),rgb(193, 41, 244),
-  hsl(177, 86%, 62%),hsl(177, 83%, 77%) 
+  var.$Softcyan
+
   );
 
   .delBtn,.resetBtn{
