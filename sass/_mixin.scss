@@ -1,6 +1,6 @@
 @use 'variables' as var;
 
-@mixin setColors($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$eqlsBg,$eqlsShadow){
+@mixin setColors($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$eqlsBg,$eqlsShadow,$numKeyHover,$numKeyShadow){
   .calc{
     background-color:$bgColor;
   }
@@ -25,14 +25,20 @@
   .numsAndOperators{
     background-color: $numsAndOpBg !important;
     box-shadow: 0 4px 0 0.2px $numsAndOpShadow !important;
+    &:hover{
+      background-color: $numKeyHover !important;
+      box-shadow:0 4px 0 0.2px $numKeyShadow !important;
+    }
   }
   .delBtn,.resetBtn{
     background-color: $delAndResetBg !important;
     box-shadow: 0 4px 0 0.2px $delAndResetShadow !important;
+
   }
   .equalesBtn{
     background-color:$eqlsBg !important;
     box-shadow: 0 4px 0 0.2px $eqlsShadow !important;
+    
   }
   
 }
@@ -47,7 +53,7 @@
   var.$Desaturateddarkblue1,
   var.$Desaturateddarkblue2,
   var.$Red,
-  var.$Darkred
+  var.$Darkred,var.$White,rgb(176, 173, 167) 
   );
   .equalesBtn{
     color:var.$White !important;
@@ -63,12 +69,12 @@
       box-shadow:0 4px 0 0.2px hsl(226, 18%, 42%) !important;
     }
   }
-  .numsAndOperators{
-    &:hover{
-      background-color: var.$White !important;
-      box-shadow:0 4px 0 0.2px rgb(176, 173, 167) !important;
-    }
-  }
+  // .numsAndOperators{
+  //   &:hover{
+  //     background-color: var.$White !important;
+  //     box-shadow:0 4px 0 0.2px rgb(176, 173, 167) !important;
+  //   }
+  // }
   
 }
 .theme1{
@@ -82,7 +88,7 @@
   var.$Darkmoderatecyan,
   var.$Verydarkcyan,
   var.$Orange ,
-  var.$Darkorange
+  var.$Darkorange,var.$White,rgb(178, 175, 169)
   );
   .delBtn,.resetBtn{
     color:var.$White !important;
@@ -98,12 +104,12 @@
       box-shadow:0 4px 0 0.2px hsl(25, 80%, 42%) !important;
     }
 
-  }
-  .numsAndOperators{
-    &:hover{
-      background-color: var.$White !important;
-      box-shadow:0 4px 0 0.2px rgb(178, 175, 169) !important;
-    }
+//   }
+//   .numsAndOperators{
+//     &:hover{
+//       background-color: var.$White !important;
+//       box-shadow:0 4px 0 0.2px rgb(178, 175, 169) !important;
+//     }
   }
 
 }
@@ -118,7 +124,7 @@
   var.$Darkviolet,
   var.$Vividmagenta,
   var.$Purecyan,
-  var.$Softcyan
+  var.$Softcyan,rgb(67, 38, 99),hsl(290deg 70% 36%)
   );
   .delBtn,.resetBtn{
     color:var.$White !important;
@@ -135,11 +141,11 @@
       box-shadow:0 4px 0 0.2px hsl(177, 83%, 77%) !important;
     }
   }
-  .numsAndOperators{
-    color: var.$Lightyellow !important;
-    &:hover{
-      background-color: rgb(67, 38, 99) !important;
-      box-shadow:0 4px 0 0.2px hsl(290deg 70% 36%) !important;
-    }
-  }
+  // .numsAndOperators{
+  //   color: var.$Lightyellow !important;
+  //   &:hover{
+  //     background-color: rgb(67, 38, 99) !important;
+  //     box-shadow:0 4px 0 0.2px hsl(290deg 70% 36%) !important;
+  //   }
+  // }
 }

@@ -24,6 +24,10 @@
   background-color: hsl(30deg, 25%, 89%) !important;
   box-shadow: 0 4px 0 0.2px hsl(28deg, 16%, 65%) !important;
 }
+.theme0 .numsAndOperators:hover {
+  background-color: hsl(0deg, 0%, 100%) !important;
+  box-shadow: 0 4px 0 0.2px rgb(176, 173, 167) !important;
+}
 .theme0 .delBtn, .theme0 .resetBtn {
   background-color: hsl(225deg, 21%, 49%) !important;
   box-shadow: 0 4px 0 0.2px hsl(224deg, 28%, 35%) !important;
@@ -45,10 +49,6 @@
 .theme0 .delBtn:hover, .theme0 .resetBtn:hover {
   background-color: hsl(225deg, 29%, 59%) !important;
   box-shadow: 0 4px 0 0.2px hsl(226deg, 18%, 42%) !important;
-}
-.theme0 .numsAndOperators:hover {
-  background-color: hsl(0deg, 0%, 100%) !important;
-  box-shadow: 0 4px 0 0.2px rgb(176, 173, 167) !important;
 }
 
 .theme1 .calc {
@@ -76,6 +76,10 @@
   background-color: hsl(45deg, 7%, 89%) !important;
   box-shadow: 0 4px 0 0.2px hsl(35deg, 11%, 61%) !important;
 }
+.theme1 .numsAndOperators:hover {
+  background-color: hsl(0deg, 0%, 100%) !important;
+  box-shadow: 0 4px 0 0.2px rgb(178, 175, 169) !important;
+}
 .theme1 .delBtn, .theme1 .resetBtn {
   background-color: hsl(185deg, 42%, 37%) !important;
   box-shadow: 0 4px 0 0.2px hsl(185deg, 58%, 25%) !important;
@@ -97,10 +101,6 @@
 .theme1 .equalesBtn:hover {
   background-color: hsl(25deg, 79%, 52%) !important;
   box-shadow: 0 4px 0 0.2px hsl(25deg, 80%, 42%) !important;
-}
-.theme1 .numsAndOperators:hover {
-  background-color: hsl(0deg, 0%, 100%) !important;
-  box-shadow: 0 4px 0 0.2px rgb(178, 175, 169) !important;
 }
 
 .theme2 .calc {
@@ -128,6 +128,10 @@
   background-color: hsl(268deg, 47%, 21%) !important;
   box-shadow: 0 4px 0 0.2px hsl(290deg, 70%, 36%) !important;
 }
+.theme2 .numsAndOperators:hover {
+  background-color: rgb(67, 38, 99) !important;
+  box-shadow: 0 4px 0 0.2px hsl(290deg, 70%, 36%) !important;
+}
 .theme2 .delBtn, .theme2 .resetBtn {
   background-color: hsl(281deg, 89%, 26%) !important;
   box-shadow: 0 4px 0 0.2px hsl(285deg, 91%, 52%) !important;
@@ -149,13 +153,6 @@
 .theme2 .equalesBtn:hover {
   background-color: hsl(177deg, 86%, 62%) !important;
   box-shadow: 0 4px 0 0.2px hsl(177deg, 83%, 77%) !important;
-}
-.theme2 .numsAndOperators {
-  color: hsl(52deg, 100%, 62%) !important;
-}
-.theme2 .numsAndOperators:hover {
-  background-color: rgb(67, 38, 99) !important;
-  box-shadow: 0 4px 0 0.2px hsl(290deg, 70%, 36%) !important;
 }
 
 * {
