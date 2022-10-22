@@ -25,6 +25,14 @@ switchOpts.forEach(function(ele){
   });
 
 });
+//calculation
+
+const numsBtn = document.querySelectorAll('.numBtn');
+const operatorBtn = document.querySelector('.operationBtn');
+const equalsBtn = document.querySelectorAll('.equalesBtn');
+const deleteBtn = document.querySelector('.delBtn');
+const previousOperationText = document.querySelector('.previous-operand');
+const currentOperationText = document.querySelector('.current-operand');
 
 
 
