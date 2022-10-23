@@ -52,7 +52,6 @@ class Calculator {
     }
     this.currentOperand = this.currentOperand.toString() + number.toString();
     // this.currentOperand = number;
-
   }
 
   chooseOperation(operation) {
@@ -86,7 +85,7 @@ class Calculator {
       default:
         return;
     }
-    this.currentOperand = computation;
+    this.currentOperand = '' + Math.round((computation + Number.EPSILON) * 100) / 100;
     this.operation = undefined;
     this.previousOperand = '';
   }
