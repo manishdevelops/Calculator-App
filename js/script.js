@@ -34,7 +34,9 @@ class Calculator {
   }
 
   clear() {
-
+    this.currentOperationText = '';
+    this.previousOperationText = '';
+    this.operation = undefined ;
   }
 
   delete() {
@@ -46,7 +48,15 @@ class Calculator {
   }
 
   chooseOperation(operation) {
-    
+
+  }
+
+  compute() {
+
+  }
+
+  updateDisplay() {
+
   }
 }
 
