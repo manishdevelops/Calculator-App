@@ -154,7 +154,7 @@ deleteBtn.addEventListener('click', button => {
 resetBtn.addEventListener('click', button => {
   calculator.clear();
   calculator.updateDisplay();
-})
+});
 
 
 
