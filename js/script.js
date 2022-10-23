@@ -87,10 +87,15 @@ class Calculator {
     this.previousOperand = '';
   }
 
+  getDisplayNumber(number) {
+    const floatNumber = parseFloat(number);
+    if(isNaN(floatNumber)) return '';
+    return floatNumber.toLocaleString('en');
+  }
   updateDisplay() {
-    this.currentOperationText.innerText = this.currentOperand;
+    this.currentOperationText.innerText = this.getDisplayNumber(this.currentOperand);
     if (this.operation != null){
-      this.previousOperationText.innerText = `${this.previousOperand} ${this.operation}`; ;
+      this.previousOperationText.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`; ;
     }
   }
 }
