@@ -88,14 +88,30 @@ class Calculator {
   }
 
   getDisplayNumber(number) {
-    const floatNumber = parseFloat(number);
-    if(isNaN(floatNumber)) return '';
-    return floatNumber.toLocaleString('en');
+    const stringNumber = number.toString();
+    const integerDigits = parseFloat(stringNumber.split('.')[0]);
+    const decimalDigits = stringNumber.split('.')[1];
+    let integerDisplay;
+    if ( isNaN(integerDigits)) {
+      integerDisplay = '';
+    } else {
+      integerDisplay = integerDigits.toLocaleString('en', {
+        maximumFractionDigits: 0
+      })
+    }
+    if ( decimalDigits != null) {
+      return `${integerDisplay}.${decimalDigits}`;
+    } else {
+      return integerDisplay ;
+    }
   }
   updateDisplay() {
     this.currentOperationText.innerText = this.getDisplayNumber(this.currentOperand);
     if (this.operation != null){
       this.previousOperationText.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`; ;
+    }
+    else {
+      this.previousOperationText.innerText = '';
     }
   }
 }
@@ -119,7 +135,6 @@ numsBtn.forEach(button => {
 
 operatorBtn.forEach(button => {
   button.addEventListener('click', () => {
-    console.log(1);
     calculator.chooseOperation(button.innerText);
     calculator.updateDisplay();
   })
