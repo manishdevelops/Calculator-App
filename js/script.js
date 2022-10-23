@@ -62,7 +62,11 @@ class Calculator {
   }
 
   compute() {
-
+    let computation;
+    const prev = parseFloat(this.previousOperand)
+    const current = parseFloat(this.currentOperand)
+    if (isNan(prev) || isNan(current)) return;
+    
   }
 
   updateDisplay() {
@@ -95,6 +99,11 @@ operatorBtn.forEach(button => {
     calculator.updateDisplay();
   })
 });
+
+equalsBtn.addEventListener('click', button => {
+  calculator.compute();
+  calculator.updateDisplay();
+})
 
 
 
