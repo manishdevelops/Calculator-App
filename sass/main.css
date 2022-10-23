@@ -292,10 +292,12 @@ body .calc .calc__container .calc__display {
 body .calc .calc__container .calc__display .previous-operand {
   color: white;
   font-size: 1.5rem;
+  overflow: hidden;
 }
 body .calc .calc__container .calc__display .current-operand {
   color: white;
   font-size: 2.5rem;
+  overflow: hidden;
 }
 body .calc .calc__container .calc__numberContainer {
   padding: 1.6rem 1.3rem;
