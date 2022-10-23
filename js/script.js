@@ -46,6 +46,10 @@ class Calculator {
 
   appendNumber(number){
     if (number === '.' && this.currentOperand.includes('.')) return;
+    if(number === '.' && this.currentOperand === ''){
+      this.currentOperand = this.currentOperand.toString() +"0"+ number.toString();
+      return;
+    }
     this.currentOperand = this.currentOperand.toString() + number.toString();
     // this.currentOperand = number;
 
