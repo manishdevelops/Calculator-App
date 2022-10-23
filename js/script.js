@@ -41,7 +41,7 @@ class Calculator {
   }
 
   delete() {
-
+    this.currentOperand = this.currentOperand.toString().slice(0, -1);
   }
 
   appendNumber(number){
@@ -121,7 +121,12 @@ operatorBtn.forEach(button => {
 equalsBtn.addEventListener('click', button => {
   calculator.compute();
   calculator.updateDisplay();
-})
+});
+
+deleteBtn.addEventListener('click', button => {
+  calculator.delete();
+  calculator.updateDisplay();
+});
 
 
 
