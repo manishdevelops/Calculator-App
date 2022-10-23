@@ -34,6 +34,18 @@ class Calculator {
   }
 
   clear() {
+
+  }
+
+  delete() {
+
+  }
+
+  appendNumber(number){
+
+  }
+
+  chooseOperation(operation) {
     
   }
 }
