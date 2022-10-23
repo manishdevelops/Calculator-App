@@ -31,11 +31,12 @@ class Calculator {
   constructor(previousOperationText, currentOperationText){
     this.previousOperationText = previousOperationText;
     this.currentOperationText = currentOperationText;
+    this.clear();
   }
 
   clear() {
-    this.currentOperationText = '';
-    this.previousOperationText = '';
+    this.currentOperand = '';
+    this.previousOperand = '';
     this.operation = undefined ;
   }
 
@@ -44,6 +45,8 @@ class Calculator {
   }
 
   appendNumber(number){
+    this.currentOperand = this.currentOperand.toString() + number.toString();
+    // this.currentOperand = number;
 
   }
 
@@ -56,7 +59,7 @@ class Calculator {
   }
 
   updateDisplay() {
-
+    this.currentOperationText.innerText = this.currentOperand;
   }
 }
 
@@ -68,7 +71,16 @@ const deleteBtn = document.querySelector('.delBtn');
 const previousOperationText = document.querySelector('.previous-operand');
 const currentOperationText = document.querySelector('.current-operand');
 
+const calculator = new Calculator(previousOperationText, currentOperationText);
 
+numsBtn.forEach(button => {
+  button.addEventListener('click', () => {
+    calculator.appendNumber(button.innerText);
+    // console.log(1);
+    calculator.updateDisplay();
+    console.log(button.innerText);
+  })
+})
 
 
 
