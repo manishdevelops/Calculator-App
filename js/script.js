@@ -27,6 +27,17 @@ switchOpts.forEach(function(ele){
 });
 //calculation
 
+class Calculator {
+  constructor(previousOperationText, currentOperationText){
+    this.previousOperationText = previousOperationText;
+    this.currentOperationText = currentOperationText;
+  }
+
+  clear() {
+    
+  }
+}
+
 const numsBtn = document.querySelectorAll('.numBtn');
 const operatorBtn = document.querySelector('.operationBtn');
 const equalsBtn = document.querySelectorAll('.equalesBtn');
