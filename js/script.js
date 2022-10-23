@@ -60,6 +60,7 @@ class Calculator {
   }
 }
 
+
 const numsBtn = document.querySelectorAll('.numBtn');
 const operatorBtn = document.querySelector('.operationBtn');
 const equalsBtn = document.querySelectorAll('.equalesBtn');
