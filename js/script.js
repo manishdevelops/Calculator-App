@@ -121,6 +121,7 @@ const numsBtn = document.querySelectorAll('.numBtn');
 const operatorBtn = document.querySelectorAll('.operationBtn');
 const equalsBtn = document.querySelector('.equalesBtn');
 const deleteBtn = document.querySelector('.delBtn');
+const resetBtn = document.querySelector('.resetBtn');
 const previousOperationText = document.querySelector('.previous-operand');
 const currentOperationText = document.querySelector('.current-operand');
 
@@ -149,6 +150,11 @@ deleteBtn.addEventListener('click', button => {
   calculator.delete();
   calculator.updateDisplay();
 });
+
+resetBtn.addEventListener('click', button => {
+  calculator.clear();
+  calculator.updateDisplay();
+})
 
 
 
