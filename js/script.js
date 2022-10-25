@@ -158,6 +158,11 @@ resetBtn.addEventListener('click', button => {
   calculator.clear();
   calculator.updateDisplay();
 });
+document.addEventListener('keydown' , function(e){
+  if((isFinite(e.key))) calculator.appendNumber(e.key);
+  else if('+-/*'.includes(e.key)) calculator.chooseOperation(e.key);
+  else if(e.key === '=' || (e.key === 'Enter')) calculator.compute();
+})
 
 
 
