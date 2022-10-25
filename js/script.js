@@ -4,6 +4,7 @@ const switchOpts=document.querySelectorAll('.btnOptions');
 const toggleSwitchBtn=document.querySelector('.toggleBtn');
 const bodyy = document.querySelector('body');
 
+
 const totalSwitches=switchOpts.length;
 let currSwitch=1;
 
@@ -165,7 +166,7 @@ document.addEventListener('keydown' , function(e){
   else if(e.key === 'Delete') calculator.clear();
   else if(e.key === 'Backspace') calculator.delete();
   calculator.updateDisplay();
-})
+});
 
 
 
