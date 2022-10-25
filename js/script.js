@@ -76,7 +76,7 @@ class Calculator {
       case '-':
         computation =prev - current;
         break;
-      case 'x':
+      case '*':
         computation =prev * current;
         break;
       case '/':
@@ -164,6 +164,7 @@ document.addEventListener('keydown' , function(e){
   else if(e.key === '=' || (e.key === 'Enter')) calculator.compute();
   else if(e.key === 'Delete') calculator.reset();
   else if(e.key === 'Backspace') calculator.delete();
+  calculator.updateDisplay();
 })
 
 
