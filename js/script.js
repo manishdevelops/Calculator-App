@@ -1,26 +1,32 @@
 'use strict'
 
-const switchOpts=document.querySelectorAll('.btnOptions');
-const toggleSwitchBtn=document.querySelector('.toggleBtn');
+const switchOpts = document.querySelectorAll('.btnOptions');
+const toggleSwitchBtn = document.querySelector('.toggleBtn');
 const bodyy = document.querySelector('body');
 
+const numsBtn = document.querySelectorAll('.numBtn');
+const operatorBtn = document.querySelectorAll('.operationBtn');
+const equalsBtn = document.querySelector('.equalesBtn');
+const deleteBtn = document.querySelector('.delBtn');
+const resetBtn = document.querySelector('.resetBtn');
+const previousOperationText = document.querySelector('.previous-operand');
+const currentOperationText = document.querySelector('.current-operand');
 
-const totalSwitches=switchOpts.length;
-let currSwitch=1;
+const totalSwitches = switchOpts.length;
+let currSwitch = 1;
 
-const goToBtn=function(val){
-  toggleSwitchBtn.style.transform=`translateX(${18*val}px)`;
+const goToBtn = function(val) {
+  toggleSwitchBtn.style.transform = `translateX(${18*val}px)`;
 }
 
-switchOpts.forEach(function(ele){
-  ele.addEventListener('click',function(e){
-    if (e.target.classList.contains('btnOptions')){
-      const TargetBtn=+ e.target.dataset.index;
-      console.log(TargetBtn);
+switchOpts.forEach(function(ele) {
+  ele.addEventListener('click', function(e) {
+    if (e.target.classList.contains('btnOptions')) {
+      const TargetBtn = +e.target.dataset.index;
       bodyy.removeAttribute('class');
       bodyy.classList.add(`theme${TargetBtn}`);
       goToBtn(TargetBtn);
-      currSwitch=TargetBtn;
+      currSwitch = TargetBtn;
     }
     return;
   });
@@ -52,12 +58,11 @@ class Calculator {
       return;
     }
     this.currentOperand = this.currentOperand.toString() + number.toString();
-    // this.currentOperand = number;
   }
 
   chooseOperation(operation) {
-    if(this.currentOperand === '') return;
-    if(this.previousOperand !== '') {
+    if (this.currentOperand === '') return;
+    if (this.previousOperand !== '') {
       this.compute();
     }
     this.operation = operation;
@@ -70,18 +75,18 @@ class Calculator {
     const prev = parseFloat(this.previousOperand);
     const current = parseFloat(this.currentOperand);
     if (isNaN(prev) || isNaN(current)) return;
-    switch (this.operation){
+    switch (this.operation) {
       case '+':
-        computation =prev + current;
+        computation = prev + current;
         break;
       case '-':
-        computation =prev - current;
+        computation = prev - current;
         break;
       case '*':
-        computation =prev * current;
+        computation = prev * current;
         break;
       case '/':
-        computation =prev / current;
+        computation = prev / current;
         break;
       default:
         return;
@@ -119,15 +124,6 @@ class Calculator {
     }
   }
 }
-
-
-const numsBtn = document.querySelectorAll('.numBtn');
-const operatorBtn = document.querySelectorAll('.operationBtn');
-const equalsBtn = document.querySelector('.equalesBtn');
-const deleteBtn = document.querySelector('.delBtn');
-const resetBtn = document.querySelector('.resetBtn');
-const previousOperationText = document.querySelector('.previous-operand');
-const currentOperationText = document.querySelector('.current-operand');
 
 const calculator = new Calculator(previousOperationText, currentOperationText);
 
