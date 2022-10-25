@@ -226,7 +226,6 @@ body .calc {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 body .calc .calc__container {
   padding: 1.5rem;
