@@ -65,6 +65,9 @@
 .theme0 .delBtn, .theme0 .resetBtn {
   color: hsl(0deg, 0%, 100%) !important;
 }
+.theme0 .previous-operand, .theme0 .current-operand {
+  color: hsl(0deg, 0%, 100%) !important;
+}
 
 .theme1 .calc {
   background-color: hsl(0deg, 0%, 90%);
@@ -131,6 +134,9 @@
 }
 .theme1 .equalesBtn {
   color: hsl(0deg, 0%, 100%) !important;
+}
+.theme1 .previous-operand, .theme1 .current-operand {
+  color: hsl(60deg, 10%, 19%) !important;
 }
 
 .theme2 .calc {
@@ -200,6 +206,9 @@
   color: hsl(198deg, 20%, 13%) !important;
 }
 .theme2 .numsAndOperators {
+  color: hsl(52deg, 100%, 62%) !important;
+}
+.theme2 .previous-operand, .theme2 .current-operand {
   color: hsl(52deg, 100%, 62%) !important;
 }
 

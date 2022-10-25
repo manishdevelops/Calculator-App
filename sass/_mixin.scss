@@ -96,6 +96,9 @@
   .delBtn, .resetBtn{
     color:var.$White !important;
   }
+  .previous-operand,.current-operand{
+    color:var.$White !important;
+  }
 
 }
 
@@ -111,7 +114,6 @@
   var.$Verydarkcyan,
   var.$Orange ,
   var.$Darkorange
-
   );
 
   .delBtn,.resetBtn{
@@ -120,6 +122,9 @@
 
   .equalesBtn{
     color:var.$White !important;
+  }
+  .previous-operand,.current-operand{
+    color:var.$Verydarkgrayishyellow !important;
   }
 
 }
@@ -136,7 +141,6 @@
   var.$Vividmagenta,
   var.$Purecyan,
   var.$Softcyan
-
   );
 
   .delBtn,.resetBtn{
@@ -149,6 +153,9 @@
 
   .numsAndOperators{
     color: var.$Lightyellow !important;
+  }
+  .previous-operand,.current-operand{
+    color:var.$Lightyellow !important;
   }
 
 }
