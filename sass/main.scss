@@ -78,7 +78,7 @@ body{
       }
       .calc__display{
         width: 100%;
-        height: 130px;
+        height: clamp(89px,20vw,120px);
         margin: 2rem 0;
         display: flex;
         justify-content: space-around;
