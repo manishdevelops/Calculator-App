@@ -273,6 +273,7 @@ body .calc .calc__container .calc__container-header .calc__header-themeContainer
 }
 body .calc .calc__container .calc__container-header .calc__header-themeContainer .calc__header-btns .toggleBtn {
   all: unset;
+  font-size: 0;
   height: 17px;
   width: 17px;
   border-radius: 50%;
