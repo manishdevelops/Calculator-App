@@ -2,7 +2,7 @@
 
 @mixin setColors($bgColor,$headerTextColor,$toggleBg,$screenBg,$mainBg,$numsAndOpBg,$numsAndOpShadow,$delAndResetBg,$delAndResetShadow,$eqlsBg,$eqlsShadow){
   
-  .calc{
+  .calc,.attribution{
     background-color:$bgColor;
   }
 
@@ -38,13 +38,12 @@
     }
     &:active {
 			filter: brightness(150%) !important;
-			/* Key pressed effect */
 			transform: translateY(4px) !important;
 			box-shadow: none !important;
 		}
   }
 
-  .delBtn,.resetBtn{
+  .delBtn, .resetBtn{
     background-color: $delAndResetBg !important;
     box-shadow: 0 4px 0 0.2px $delAndResetShadow !important;
     &:hover{
@@ -96,7 +95,7 @@
   .delBtn, .resetBtn{
     color:var.$White !important;
   }
-  .previous-operand,.current-operand{
+  .previous-operand, .current-operand{
     color:var.$White !important;
   }
 
@@ -123,7 +122,7 @@
   .equalesBtn{
     color:var.$White !important;
   }
-  .previous-operand,.current-operand{
+  .previous-operand, .current-operand{
     color:var.$Verydarkgrayishyellow !important;
   }
 
@@ -143,7 +142,7 @@
   var.$Softcyan
   );
 
-  .delBtn,.resetBtn{
+  .delBtn, .resetBtn{
     color:var.$White !important;
   }
 
@@ -154,7 +153,7 @@
   .numsAndOperators{
     color: var.$Lightyellow !important;
   }
-  .previous-operand,.current-operand{
+  .previous-operand, .current-operand{
     color:var.$Lightyellow !important;
   }
 

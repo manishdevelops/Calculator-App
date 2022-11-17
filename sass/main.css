@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
-.theme0 .calc {
+.theme0 .calc, .theme0 .attribution {
   background-color: hsl(222deg, 26%, 31%);
 }
 .theme0 .calc__container-logo, .theme0 .labels, .theme0 .calc__theme {
@@ -29,7 +29,6 @@
 }
 .theme0 .numsAndOperators:active {
   filter: brightness(150%) !important;
-  /* Key pressed effect */
   transform: translateY(4px) !important;
   box-shadow: none !important;
 }
@@ -69,7 +68,7 @@
   color: hsl(0deg, 0%, 100%) !important;
 }
 
-.theme1 .calc {
+.theme1 .calc, .theme1 .attribution {
   background-color: hsl(0deg, 0%, 90%);
 }
 .theme1 .calc__container-logo, .theme1 .labels, .theme1 .calc__theme {
@@ -99,7 +98,6 @@
 }
 .theme1 .numsAndOperators:active {
   filter: brightness(150%) !important;
-  /* Key pressed effect */
   transform: translateY(4px) !important;
   box-shadow: none !important;
 }
@@ -139,7 +137,7 @@
   color: hsl(60deg, 10%, 19%) !important;
 }
 
-.theme2 .calc {
+.theme2 .calc, .theme2 .attribution {
   background-color: hsl(268deg, 75%, 9%);
 }
 .theme2 .calc__container-logo, .theme2 .labels, .theme2 .calc__theme {
@@ -169,7 +167,6 @@
 }
 .theme2 .numsAndOperators:active {
   filter: brightness(150%) !important;
-  /* Key pressed effect */
   transform: translateY(4px) !important;
   box-shadow: none !important;
 }
@@ -322,7 +319,7 @@ body .calc .calc__container .calc__numberContainer .rows .keyStyle {
   height: 70px;
   text-align: center;
   border-radius: 5px;
-  font-size: 2.1rem;
+  font-size: clamp(2.1rem, 1.81425rem + 1.27vw, 2.6rem);
 }
 body .calc .calc__container .calc__numberContainer .rows .keyStyle:hover {
   cursor: pointer;
@@ -356,4 +353,14 @@ body .calc .calc__container .calc__numberContainer .row-5 .resetBtn:hover, body 
     height: 60px !important;
     border-radius: 10px;
   }
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: brown;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=main.css.map */

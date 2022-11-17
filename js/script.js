@@ -12,6 +12,11 @@ const resetBtn = document.querySelector('.resetBtn');
 const previousOperationText = document.querySelector('.previous-operand');
 const currentOperationText = document.querySelector('.current-operand');
 
+//sounds
+const switchThemeAudio = new Audio('https://www.fesliyanstudios.com/play-mp3/641');
+const btnAudio = new Audio();
+btnAudio.src="/assets/sounds/button-sound-numpad.wav";
+
 const totalSwitches = switchOpts.length;
 let currSwitch = 1;
 
@@ -24,9 +29,11 @@ switchOpts.forEach(function(ele) {
     if (e.target.classList.contains('btnOptions')) {
       const TargetBtn = +e.target.dataset.index;
       bodyy.removeAttribute('class');
-      bodyy.classList.add(`theme${TargetBtn}`);
+      bodyy.classList.toggle(`theme${TargetBtn}`);
       goToBtn(TargetBtn);
       currSwitch = TargetBtn;
+      switchThemeAudio.volume = ".1";
+      switchThemeAudio.play();
     }
     return;
   });
@@ -58,6 +65,7 @@ class Calculator {
       return;
     }
     this.currentOperand = this.currentOperand.toString() + number.toString();
+  
   }
 
   chooseOperation(operation) {
@@ -68,6 +76,8 @@ class Calculator {
     this.operation = operation;
     this.previousOperand = this.currentOperand ;
     this.currentOperand = '';
+    btnAudio.volume=".1";
+    btnAudio.play();
   }
 
   compute() {
@@ -131,6 +141,8 @@ numsBtn.forEach(button => {
   button.addEventListener('click', () => {
     calculator.appendNumber(button.innerText);
     calculator.updateDisplay();
+    btnAudio.volume=".1";
+    btnAudio.play();
   })
 });
 
@@ -138,20 +150,28 @@ operatorBtn.forEach(button => {
   button.addEventListener('click', () => {
     calculator.chooseOperation(button.innerText);
     calculator.updateDisplay();
+    btnAudio.volume=".1";
+    btnAudio.play();
   })
 });
 
 equalsBtn.addEventListener('click', button => {
+  btnAudio.volume=".1";
+  btnAudio.play();
   calculator.compute();
   calculator.updateDisplay();
 });
 
 deleteBtn.addEventListener('click', button => {
+  btnAudio.volume=".1";
+    btnAudio.play();
   calculator.delete();
   calculator.updateDisplay();
 });
 
 resetBtn.addEventListener('click', button => {
+  btnAudio.volume=".1";
+  btnAudio.play();
   calculator.clear();
   calculator.updateDisplay();
 });
