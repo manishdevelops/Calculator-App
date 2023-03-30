@@ -113,7 +113,8 @@ body{
           .keyStyle{
             all: unset;
             width: min(110px,22%);
-            height: 70px;
+            // height: 70px;
+            height: clamp(3rem, 2.125rem + 5vw, 4.375rem);
             text-align: center;
             border-radius: 5px;
             font-size: clamp(2.1rem, 1.81425rem + 1.27vw, 2.6rem);
