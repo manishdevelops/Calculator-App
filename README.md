@@ -49,4 +49,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Manish-d-art](https://www.frontendmentor.io/profile/Manish-d-art)
-- Twitter - [@manishdevelops]([https://www.twitter.com/manishmandal77](https://twitter.com/manishdevelops)https://twitter.com/manishdevelops)
+- Twitter - [@manishdevelops](https://twitter.com/manishdevelops)
